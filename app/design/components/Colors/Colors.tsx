@@ -1,16 +1,18 @@
 import React from 'react';
-import styles from './Colors.module.css';
 
 export default function Colors() {
   return (
-    <section id="colors">
+    <section id="colors" style={{ margin: '4rem 0' }}>
       <h2 className="uppercase">
         <span>01</span> colors
       </h2>
 
       <div className="flex">
-        <div className={styles.colorItem} style={{ flexGrow: 1 }}>
-          <div className={`bg-dark text-white ${styles.colorSampleBox}`}>
+        <div style={{ flexGrow: 1 }}>
+          <div
+            className="bg-dark text-white"
+            style={{ padding: '3rem 1rem 1rem', border: '1px solid white' }}
+          >
             #0B0D17
           </div>
           <p>
@@ -21,8 +23,11 @@ export default function Colors() {
           </p>
         </div>
 
-        <div className={styles.colorItem}>
-          <div className={`bg-accent text-dark ${styles.colorSampleBox}`}>
+        <div style={{ flexGrow: 1 }}>
+          <div
+            className="bg-accent text-dark"
+            style={{ padding: '3rem 1rem 1rem', border: '1px solid white' }}
+          >
             #D0D6F9
           </div>
           <p>
@@ -33,8 +38,11 @@ export default function Colors() {
           </p>
         </div>
 
-        <div className={styles.colorItem}>
-          <div className={`bg-white text-dark ${styles.colorSampleBox}`}>
+        <div style={{ flexGrow: 1 }}>
+          <div
+            className="bg-white text-dark"
+            style={{ padding: '3rem 1rem 1rem', border: '1px solid white' }}
+          >
             #FFFFFF
           </div>
           <p>
