@@ -3,6 +3,7 @@ import styles from './page.module.css';
 import { ff_sans_cond, ff_serif } from '../style/fonts';
 import Colors from './components/Colors/Colors';
 import Typography from './components/Typography/Typography';
+import InteractiveElements from './components/InteractiveElements/InteractiveElements';
 
 export const metadata = {
   title: ' Design System | Space Tourism',
@@ -17,6 +18,7 @@ export default function DesignPage() {
       </h1>
       <Colors />
       <Typography />
+      <InteractiveElements />
     </div>
   );
 }
