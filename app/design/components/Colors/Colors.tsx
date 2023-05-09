@@ -1,9 +1,14 @@
+import { ff_sans_cond } from '@/app/style/fonts';
 import React from 'react';
 
 export default function Colors() {
   return (
-    <section id="colors" style={{ margin: '4rem 0' }}>
-      <h2 className="uppercase">
+    <section
+      id="colors"
+      className="flow"
+      style={{ margin: '4rem 0', ['--flow-space' as string]: '3rem' }}
+    >
+      <h2 className={`numbered-title ${ff_sans_cond}`}>
         <span>01</span> colors
       </h2>
 
