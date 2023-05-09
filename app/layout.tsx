@@ -1,7 +1,5 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
+import { ff_sans_normal } from './style/fonts';
 
 export const metadata = {
   title: 'Space Tourism',
@@ -15,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${ff_sans_normal.className}`}>{children}</body>
     </html>
   );
 }
