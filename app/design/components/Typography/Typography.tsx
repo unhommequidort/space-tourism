@@ -1,5 +1,5 @@
 import { ff_sans_cond, ff_sans_normal, ff_serif } from '@/app/style/fonts';
-import React from 'react';
+import React, { CSSProperties } from 'react';
 // import { ff_sans_normal } from '@/';
 
 export default function Typography() {
@@ -7,7 +7,7 @@ export default function Typography() {
     <section
       id="typography"
       className="flow"
-      style={{ margin: '4rem 0', ['--flow-space' as string]: '3rem' }}
+      style={{ margin: '4rem 0', '--flow-space': '3rem' }}
     >
       <h2 className={`numbered-title ${ff_sans_cond}`}>
         <span>02 </span>Typography
@@ -15,7 +15,7 @@ export default function Typography() {
       <div className="flex">
         <div
           className="flow"
-          style={{ flexBasis: '100%', ['--flow-space' as string]: '2rem' }}
+          style={{ flexBasis: '100%', '--flow-space': '2rem' }}
         >
           <div>
             <p className="text-accent">Heading 1 - Bellefair Regular - 150px</p>
@@ -51,7 +51,7 @@ export default function Typography() {
 
         <div
           className="flow"
-          style={{ flexBasis: '100%', ['--flow-space' as string]: '2rem' }}
+          style={{ flexBasis: '100%', '--flow-space': '2rem' }}
         >
           <div>
             <p className="text-accent">

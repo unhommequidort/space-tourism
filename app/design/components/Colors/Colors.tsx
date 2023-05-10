@@ -6,7 +6,7 @@ export default function Colors() {
     <section
       id="colors"
       className="flow"
-      style={{ margin: '4rem 0', ['--flow-space' as string]: '3rem' }}
+      style={{ margin: '4rem 0', '--flow-space': '3rem' }}
     >
       <h2 className={`numbered-title ${ff_sans_cond}`}>
         <span>01</span> colors
