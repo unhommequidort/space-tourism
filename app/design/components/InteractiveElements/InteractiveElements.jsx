@@ -42,7 +42,10 @@ export default function InteractiveElements() {
           </a>
         </div>
 
-        <div style={{ marginBottom: '50vh' }}>
+        <div
+          className="flow"
+          style={{ marginBottom: '50vh', '--flow-space': '4rem' }}
+        >
           {/* <!-- Tabs --> */}
           <div className="tab-list underline-indicators flex" role="tablist">
             <button
@@ -69,6 +72,17 @@ export default function InteractiveElements() {
           </div>
 
           {/* <!-- Dots --> */}
+          <div className="dot-indicators flex" role="tablist">
+            <button role="tab" aria-selected="true">
+              <span className="sr-only">Slide title</span>
+            </button>
+            <button role="tab" aria-selected="false">
+              <span className="sr-only">Slide title</span>
+            </button>
+            <button role="tab" aria-selected="false">
+              <span className="sr-only">Slide title</span>
+            </button>
+          </div>
 
           {/* <!-- Numbers --> */}
         </div>
