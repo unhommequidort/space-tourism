@@ -44,7 +44,7 @@ export default function InteractiveElements() {
 
         <div
           className="flow"
-          style={{ marginBottom: '50vh', '--flow-space': '4rem' }}
+          style={{ marginBottom: '10vh', '--flow-space': '4rem' }}
         >
           {/* <!-- Tabs --> */}
           <div className="tab-list underline-indicators flex" role="tablist">
