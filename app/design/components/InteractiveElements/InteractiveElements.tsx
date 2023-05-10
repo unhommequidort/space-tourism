@@ -1,10 +1,11 @@
+import LargeButton from '@/app/components/LargeButton/LargeButton';
 import { ff_sans_cond, ff_serif } from '@/app/style/fonts';
 import React from 'react';
 
 export default function InteractiveElements() {
   return (
-    <section class="flow" id="interactive-elements">
-      <h2 class="numbered-title">
+    <section className="flow" id="interactive-elements">
+      <h2 className="numbered-title">
         <span>03</span> Interactive elements
       </h2>
 
@@ -31,15 +32,10 @@ export default function InteractiveElements() {
         </nav>
       </div>
 
-      <div class="flex">
+      <div className="flex">
         <div style={{ marginTop: '5rem', marginRight: '12rem' }}>
           {/* explore button */}
-          <a
-            href="#"
-            className={`large-button uppercase ${ff_serif.className} text-dark bg-white fs-600`}
-          >
-            Explore
-          </a>
+          <LargeButton url="#" text="Explore" />
         </div>
 
         <div

@@ -1,5 +1,10 @@
 import styles from './page.module.css';
 
+export const metadata = {
+  title: 'Space Tourism',
+  description: 'Space Tourism',
+};
+
 export default function Home() {
   return (
     <div className={`${styles.boxContainer} container flex`}>
