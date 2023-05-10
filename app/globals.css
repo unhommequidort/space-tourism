@@ -311,3 +311,29 @@ select {
 .dot-indicators > [aria-selected='true'] {
   background-color: hsl(var(--clr-white) / 1);
 }
+
+.numbered-indicators {
+  display: flex;
+  flex-direction: column;
+}
+
+.numbered-indicators > * {
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  width: 2.5em;
+  aspect-ratio: 1;
+  border: 2px solid hsl(var(--clr-white) / 0.25);
+  border-radius: 50%;
+}
+
+.numbered-indicators > *:hover,
+.numbered-indicators > *:focus {
+  border-color: hsl(var(--clr-white) / 0.5);
+}
+
+.numbered-indicators > [aria-selected='true'] {
+  border-color: hsl(var(--clr-white) / 1);
+  background-color: hsl(var(--clr-white));
+  color: hsl(var(--clr-dark));
+}

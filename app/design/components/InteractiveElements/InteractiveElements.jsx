@@ -32,7 +32,7 @@ export default function InteractiveElements() {
       </div>
 
       <div class="flex">
-        <div style={{ marginTop: '5rem' }}>
+        <div style={{ marginTop: '5rem', marginRight: '12rem' }}>
           {/* explore button */}
           <a
             href="#"
@@ -85,6 +85,32 @@ export default function InteractiveElements() {
           </div>
 
           {/* <!-- Numbers --> */}
+          <div
+            className={`numbered-indicators fs-600 flex ${ff_serif.className}`}
+            role="tablist"
+          >
+            <button
+              className="bg-dark text-white"
+              role="tab"
+              aria-selected="true"
+            >
+              1
+            </button>
+            <button
+              className="bg-dark text-white"
+              role="tab"
+              aria-selected="false"
+            >
+              2
+            </button>
+            <button
+              className="bg-dark text-white"
+              role="tab"
+              aria-selected="false"
+            >
+              3
+            </button>
+          </div>
         </div>
       </div>
     </section>
