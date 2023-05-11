@@ -11,7 +11,7 @@ export default function LargeButton({ url, text }: Props): JSX.Element {
   return (
     <a
       href={url}
-      className={`${styles['large-button']} uppercase ${ff_serif.className} text-dark bg-white fs-600`}
+      className={`${styles['large-button']} uppercase ${ff_serif.className} text-dark bg-white`}
     >
       {text}
     </a>
