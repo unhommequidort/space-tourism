@@ -23,6 +23,10 @@
     transform 750ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+.large-button:focus {
+  outline: none;
+}
+
 .large-button:hover::after,
 .large-button:focus::after {
   opacity: 1;

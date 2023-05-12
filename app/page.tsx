@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="grid-container grid-container--home">
+    <main id="main" className="grid-container grid-container--home">
       <div>
         <h1
           className={`fs-500 text-accent uppercase ${ff_sans_cond.className} letter-spacing-1`}
@@ -30,6 +30,6 @@ export default function Home() {
       <div>
         <LargeButton url="#" text="Explore" />
       </div>
-    </div>
+    </main>
   );
 }

@@ -27,7 +27,7 @@ export default function PrimaryNavigation() {
               className={`${ff_sans_cond.className} uppercase text-white letter-spacing-2`}
               href="/"
             >
-              <span>00</span>Home
+              <span aria-hidden="true">00</span>Home
             </Link>
           </li>
           <li>
@@ -35,7 +35,7 @@ export default function PrimaryNavigation() {
               className={`${ff_sans_cond.className} uppercase text-white letter-spacing-2`}
               href="/destination"
             >
-              <span>01</span>Destination
+              <span aria-hidden="true">01</span>Destination
             </Link>
           </li>
           <li>
@@ -43,7 +43,7 @@ export default function PrimaryNavigation() {
               className={`${ff_sans_cond.className} uppercase text-white letter-spacing-2`}
               href="/crew"
             >
-              <span>02</span>Crew
+              <span aria-hidden="true">02</span>Crew
             </Link>
           </li>
           <li>
@@ -51,7 +51,7 @@ export default function PrimaryNavigation() {
               className={`${ff_sans_cond.className} uppercase text-white letter-spacing-2`}
               href="/technology"
             >
-              <span>03</span>Technology
+              <span aria-hidden="true">03</span>Technology
             </Link>
           </li>
         </ul>
