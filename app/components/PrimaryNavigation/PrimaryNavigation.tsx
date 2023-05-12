@@ -3,9 +3,13 @@ import { ff_sans_cond } from '@/app/style/fonts';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import styles from './PrimaryNavigation.module.css';
+import { usePathname } from 'next/navigation';
 
 export default function PrimaryNavigation() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const pathname = usePathname();
+  console.log(pathname);
   return (
     <>
       <button
@@ -22,7 +26,7 @@ export default function PrimaryNavigation() {
           data-visible={menuOpen}
           className={`${styles['primary-navigation']} ${styles['underline-indicators']} flex`}
         >
-          <li className={`${styles['active']}`}>
+          <li className={pathname === '/' ? styles['active'] : ''}>
             <Link
               className={`${ff_sans_cond.className} uppercase text-white letter-spacing-2`}
               href="/"
@@ -30,7 +34,7 @@ export default function PrimaryNavigation() {
               <span aria-hidden="true">00</span>Home
             </Link>
           </li>
-          <li>
+          <li className={pathname === '/destination' ? styles['active'] : ''}>
             <Link
               className={`${ff_sans_cond.className} uppercase text-white letter-spacing-2`}
               href="/destination"
@@ -38,7 +42,7 @@ export default function PrimaryNavigation() {
               <span aria-hidden="true">01</span>Destination
             </Link>
           </li>
-          <li>
+          <li className={pathname === '/crew' ? styles['active'] : ''}>
             <Link
               className={`${ff_sans_cond.className} uppercase text-white letter-spacing-2`}
               href="/crew"
@@ -46,7 +50,7 @@ export default function PrimaryNavigation() {
               <span aria-hidden="true">02</span>Crew
             </Link>
           </li>
-          <li>
+          <li className={pathname === '/technology' ? styles['active'] : ''}>
             <Link
               className={`${ff_sans_cond.className} uppercase text-white letter-spacing-2`}
               href="/technology"
