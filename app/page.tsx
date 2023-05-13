@@ -12,10 +12,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="home grid" style={{ width: '100%', height: '100vh' }}>
-      <a className="skip-to-content" href="#main">
-        Skip to content
-      </a>
+    <div className="home grid page-wrapper">
       <MainHeader />
       <main id="main" className=" grid-container grid-container--home">
         <div>

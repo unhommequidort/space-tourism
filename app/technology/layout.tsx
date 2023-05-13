@@ -7,10 +7,10 @@ export default function TechnologyLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section>
+    <div className="technology grid page-wrapper">
       <MainHeader />
 
       {children}
-    </section>
+    </div>
   );
 }

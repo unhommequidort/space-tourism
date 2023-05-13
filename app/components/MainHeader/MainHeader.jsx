@@ -4,16 +4,22 @@ import PrimaryNavigation from '@/app/components/PrimaryNavigation/PrimaryNavigat
 
 export default function MainHeader() {
   return (
-    <header className="primary-header flex">
-      <Image
-        src="/assets/shared/logo.svg"
-        alt="space tourism logo"
-        width={100}
-        height={100}
-        className="logo"
-      />
+    <>
+      <a className="skip-to-content" href="#main">
+        Skip to content
+      </a>
 
-      <PrimaryNavigation />
-    </header>
+      <header className="primary-header flex">
+        <Image
+          src="/assets/shared/logo.svg"
+          alt="space tourism logo"
+          width={100}
+          height={100}
+          className="logo"
+        />
+
+        <PrimaryNavigation />
+      </header>
+    </>
   );
 }

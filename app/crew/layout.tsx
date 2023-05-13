@@ -7,10 +7,10 @@ export default function CrewLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section>
+    <div className="crew grid page-wrapper">
       <MainHeader />
 
       {children}
-    </section>
+    </div>
   );
 }
