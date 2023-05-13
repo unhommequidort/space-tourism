@@ -1,6 +1,7 @@
 import React from 'react';
 import { ff_serif } from '../../style/fonts';
 import styles from './LargeButton.module.css';
+import Link from 'next/link';
 
 interface Props {
   url: string;
@@ -9,11 +10,11 @@ interface Props {
 
 export default function LargeButton({ url, text }: Props): JSX.Element {
   return (
-    <a
+    <Link
       href={url}
       className={`${styles['large-button']} uppercase ${ff_serif.className} text-dark bg-white`}
     >
       {text}
-    </a>
+    </Link>
   );
 }

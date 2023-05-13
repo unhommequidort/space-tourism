@@ -1,9 +1,7 @@
-import Image from 'next/image';
 import LargeButton from './components/LargeButton/LargeButton';
 import MainHeader from '@/app/components/MainHeader/MainHeader';
-import styles from './page.module.css';
 import { ff_sans_cond, ff_serif } from './style/fonts';
-import backgroundImage from '@/public/assets/home/background-home-mobile.jpg';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Space Tourism',
@@ -32,15 +30,8 @@ export default function Home() {
           </p>
         </div>
         <div>
-          <LargeButton url="#" text="Explore" />
+          <LargeButton url="/destination" text="Explore" />
         </div>
-        {/* <Image
-        fill={true}
-        src={backgroundImage}
-        alt=""
-        aria-hidden="true"
-        style={{ zIndex: -999 }}
-      /> */}
       </main>
     </div>
   );
