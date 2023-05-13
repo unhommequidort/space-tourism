@@ -407,12 +407,15 @@ select {
 /* ---------------------------- */
 /*  Page specific background    */
 /* ---------------------------- */
-body {
+/* body {
   background-size: cover;
   background-position: bottom center;
-}
+} */
 
 .home {
+  grid-template-rows: min-content 1fr;
+  background-size: cover;
+  background-position: bottom center;
   background-image: url(/assets/home/background-home-mobile.jpg);
 }
 
