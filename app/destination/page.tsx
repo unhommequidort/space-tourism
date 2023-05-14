@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import { ff_sans_cond, ff_sans_normal, ff_serif } from '../style/fonts';
 import json from '@/data.json';
-import Image from 'next/image';
 
 export default function DestinationPage() {
   const [destination, setDestination] = useState('Moon');
