@@ -567,7 +567,7 @@ select {
 
 .grid-container--technology {
   --flow-space: 1rem;
-  padding-inline: 0;
+  padding-inline: 1rem;
   grid-template-areas:
     'title'
     'image'
@@ -674,6 +674,7 @@ select {
     grid-template-columns:
       minmax(1rem, 1fr) minmax(0px, 6rem) minmax(0px, 50rem) minmax(0px, 26rem)
       minmax(1rem, 1fr);
+    padding-inline: 0;
     justify-items: center;
     align-items: center;
     grid-template-areas:
