@@ -674,7 +674,8 @@ select {
     grid-template-columns:
       minmax(1rem, 1fr) minmax(0px, 6rem) minmax(0px, 50rem) minmax(0px, 26rem)
       minmax(1rem, 1fr);
-    justify-items: start;
+    justify-items: center;
+    align-items: center;
     grid-template-areas:
       '. title title tile .'
       '. tabs content image .';
@@ -690,4 +691,8 @@ select {
   .grid-container--technology .numbered-indicators {
     flex-direction: column;
   }
+
+  /* .grid-container--crew > .dot-indicators {
+    justify-self: start;
+  } */
 }
