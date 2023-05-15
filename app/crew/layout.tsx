@@ -14,7 +14,6 @@ export default function CrewLayout({
   return (
     <div className="crew grid page-wrapper">
       <MainHeader />
-
       {children}
     </div>
   );

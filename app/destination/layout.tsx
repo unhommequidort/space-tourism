@@ -14,7 +14,6 @@ export default function DestinationLayout({
   return (
     <div className="destination grid page-wrapper">
       <MainHeader />
-
       {children}
     </div>
   );

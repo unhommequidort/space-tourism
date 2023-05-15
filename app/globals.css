@@ -93,6 +93,7 @@ body {
 }
 
 /* Images */
+img,
 picture {
   max-width: 100%;
   display: block;
@@ -139,6 +140,10 @@ select {
 /* .flow > * + *, */
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-space, 1rem);
+}
+
+.flow--space-small {
+  --flow-space: 0.75rem;
 }
 
 .container {
@@ -316,7 +321,7 @@ select {
 }
 
 .underline-indicators > * {
-  padding: var(--underline-gap, 1em) 0;
+  padding: var(--underline-gap, 0.5rem) 0;
   border: 0;
   cursor: pointer;
   border-bottom: 0.2rem solid hsl(var(--clr-white) / 0);
@@ -502,7 +507,7 @@ select {
   grid-area: title;
 }
 
-.grid-container--destination > img {
+.grid-container--destination > picture {
   grid-area: image;
   max-width: 60%;
 }
@@ -527,6 +532,35 @@ select {
   font-size: 1.75rem;
 }
 
+/* crew layout */
+
+.grid-container--crew {
+  --flow-space: 2rem;
+  grid-template-areas:
+    'title'
+    'image'
+    'dots'
+    'content';
+}
+
+.grid-container--crew .crew-details {
+  grid-area: content;
+}
+
+.grid-container--crew .dot-indicators {
+  grid-area: dots;
+}
+
+.grid-container--crew picture {
+  grid-area: image;
+  max-width: 60%;
+  border-bottom: 1px solid hsl(var(--clr-white) / 0.1);
+}
+
+.crew-details h2 {
+  opacity: 0.5;
+}
+
 @media (min-width: 35em) {
   .numbered-title {
     justify-self: start;
@@ -537,6 +571,15 @@ select {
     flex-direction: row;
     justify-content: space-evenly;
     /* align-items: center; */
+  }
+
+  .grid-container--crew {
+    padding-bottom: 0;
+    grid-template-areas:
+      'title'
+      'content'
+      'dots'
+      'image';
   }
 }
 
@@ -572,12 +615,28 @@ select {
       '. image content .';
   }
 
-  .grid-container--destination > img {
+  .grid-container--destination > picture,
+  .grid-container--crew > picture {
     max-width: 100%;
   }
 
   .destination-meta {
     --gap: min(6vw, 6rem);
     justify-content: start;
+  }
+
+  .grid-container--crew {
+    grid-template-areas:
+      '. title title .'
+      '. content image .'
+      '. dots image .';
+  }
+
+  .grid-container--crew > .dot-indicators {
+    justify-self: start;
+  }
+
+  .grid-container--crew > picture {
+    align-self: end;
   }
 }

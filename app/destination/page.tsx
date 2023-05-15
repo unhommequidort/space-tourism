@@ -14,8 +14,13 @@ export default function DestinationPage() {
         <span aria-hidden="true">01 </span>Pick your destination
       </h1>
 
-      <img src={`${data?.images.webp.substring(1)}`} alt={`${data?.name}`} />
-
+      <picture>
+        <source
+          srcSet={`${data?.images.webp.substring(1)}`}
+          type="image/webp"
+        />
+        <img src={`${data?.images.png.substring(1)}`} alt={`${data?.name}`} />
+      </picture>
       <div className="tab-list underline-indicators flex" role="tablist">
         {json.destinations.map((dest) => (
           <button
@@ -32,7 +37,7 @@ export default function DestinationPage() {
         ))}
       </div>
 
-      <article className="destination-info">
+      <article className="destination-info flow">
         <h2 className={`fs-800 text-white uppercase ${ff_serif.className} `}>
           {destination}
         </h2>
