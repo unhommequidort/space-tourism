@@ -567,7 +567,7 @@ select {
 
 .grid-container--technology {
   --flow-space: 1rem;
-  padding-inline: 1rem;
+  padding-inline: 0;
   grid-template-areas:
     'title'
     'image'
@@ -577,6 +577,7 @@ select {
 
 .grid-container--technology .technology-details {
   grid-area: content;
+  padding-inline: 1rem;
 }
 
 .grid-container--technology .numbered-indicators {
@@ -609,6 +610,9 @@ select {
       'content'
       'dots'
       'image';
+  }
+  .grid-container--technology .technology-details {
+    padding-inline: 0;
   }
 }
 
@@ -674,7 +678,6 @@ select {
     grid-template-columns:
       minmax(1rem, 1fr) minmax(0px, 6rem) minmax(0px, 50rem) minmax(0px, 26rem)
       minmax(1rem, 1fr);
-    padding-inline: 0;
     justify-items: center;
     align-items: center;
     grid-template-areas:
