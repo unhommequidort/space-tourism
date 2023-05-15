@@ -664,10 +664,6 @@ select {
       '. dots image .';
   }
 
-  /* .grid-container--crew > .dot-indicators {
-    justify-self: start;
-  } */
-
   .grid-container--crew > picture {
     grid-column: span 2;
     align-self: end;

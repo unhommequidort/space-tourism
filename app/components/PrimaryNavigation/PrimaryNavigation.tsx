@@ -9,7 +9,6 @@ export default function PrimaryNavigation() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const pathname = usePathname();
-  console.log(pathname);
   return (
     <>
       <button

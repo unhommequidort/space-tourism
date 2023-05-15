@@ -7,7 +7,6 @@ export default function TechnologyPage() {
   const [tech, setTech] = useState('Launch vehicle');
 
   const data = json.technology.find((obj) => obj.name === tech);
-  console.log(data);
 
   return (
     <main id="main" className="grid-container grid-container--technology flow">
