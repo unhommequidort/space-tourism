@@ -42,9 +42,7 @@ export default function DestinationPage() {
           {destination}
         </h2>
 
-        <p className={`text-accent fs-400 ${ff_sans_normal.className}`}>
-          {data?.description}
-        </p>
+        <p>{data?.description}</p>
 
         <div className="destination-meta flex">
           <div>

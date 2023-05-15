@@ -8,7 +8,7 @@ export default function CrewPage() {
   const [name, setName] = useState('Douglas Hurley');
 
   const data = json.crew.find((member) => member.name === name);
-  console.log(data);
+
   return (
     <main id="main" className="grid-container grid-container--crew flow">
       <h1 className={`numbered-title ${ff_sans_cond}`}>
@@ -24,7 +24,7 @@ export default function CrewPage() {
             {name}
           </p>
         </header>
-        <p className="text-accent">{data?.bio}</p>
+        <p>{data?.bio}</p>
       </article>
 
       <div className="dot-indicators flex" role="tablist">
